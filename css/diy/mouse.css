@@ -1,5 +1,8 @@
 body{cursor:url("/img/normal1.png"), default;}
 
+.scroll-down-bar{
+    cursor: url("/img/link1.png"), default;
+}
 
 /*a标签*/
 
@@ -83,4 +86,13 @@ i:hover {
 .space {
     color: #00c4b6;
 }
+
+html{
+	cursor: url("/img/normal1.png"), default;
+}
+
+#he-plugin-simple div{
+	cursor: url("/img/link1.png"), default;
+}
+
 
