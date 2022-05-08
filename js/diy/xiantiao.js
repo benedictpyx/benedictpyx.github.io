@@ -9,7 +9,14 @@
 	}
 	function l()
 	{
-		var i=j("script"),w=i.length,v=i[w-1];return{l:w,z:o(v,"zIndex",-1),o:o(v,"opacity",0.5),c:o(v,"color","0,0,0"),n:o(v,"count",99)}
+		var i=j("script"),w=i.length,v=i[w-1];
+		if(document.getElementById("color-toggle-icon").getAttribute("data")=='dark'){
+			return{l:w,z:o(v,"zIndex",-1),o:o(v,"opacity",0.5),c:o(v,"color","0,0,0"),n:o(v,"count",99)}
+		}
+		else{
+			return{l:w,z:o(v,"zIndex",-1),o:o(v,"opacity",0.5),c:o(v,"color","255,255,255"),n:o(v,"count",99)}
+		}
+		
 	}
 	function k()
 	{
