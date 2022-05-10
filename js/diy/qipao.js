@@ -2,7 +2,7 @@ function qipao() {
     $('.banner').circleMagic({
         radius: 15,
         density: .1,
-        color: 'rgba(160,238,225,.4)',
+        color: 'rgba(240,161,168,0.6)',
 		// color: 'random',
         clearOffset: 0.2
     });
@@ -32,7 +32,7 @@ function qipao() {
             o = l.offsetWidth, a = l.offsetHeight,
                 function() {
                     var t = document.createElement("canvas");
-                    t.id = "canvas", t.style.top = 0, t.style.zIndex = 0, t.style.position = "absolute", l.appendChild(t), t.parentElement.style.overflow = "hidden"
+                    t.id = "canvas", t.style.top = 0, t.style.zIndex = -1, t.style.position = "absolute", l.appendChild(t), t.parentElement.style.overflow = "hidden"
                 }(), (n = document.getElementById("canvas")).width = o, n.height = a, r = n.getContext("2d");
             for (var t = 0; t < o * d.density; t++) {
                 var e = new f;
